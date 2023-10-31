@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+li {
+  margin: 10px 0;
+  font-size: 25px; /* Increase the font size */
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold; /* Make the font bold */
+}
+
+a:hover {
+  color: #c2c2c2;
+}
