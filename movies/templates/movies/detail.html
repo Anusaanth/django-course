@@ -1,3 +1,31 @@
-<p>{{movie.title}}</p>
-<p>{{movie.year}}</p>
-<a href="/movies/delete/{{movie.id}}">Delete</a>
+{% load static %}
+
+<div
+  class="movie"
+  style="
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  "
+>
+  <p class="movie-title" style="font-size: 20px; font-weight: bold; margin: 0">
+    {{ movie.title }}
+  </p>
+  <p class="movie-year" style="font-size: 16px; margin: 5px 0">
+    Year: {{ movie.year }}
+  </p>
+  <a
+    class="delete-link"
+    href="/movies/delete/{{ movie.id }}"
+    style="
+      color: #d9534f;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 5px;
+      display: inline-block;
+    "
+    >Delete</a
+  >
+</div>
